@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Esquina - Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen active">
+            <div class="glass-card">
+                <div class="logo">
+                    <h1>La Esquina</h1>
+                    <p>Panel de Administración</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                </form>
+                <div class="demo-credentials">
+                    <p>Credenciales de prueba:</p>
+                    <p>Email: carlos@store.com | Contraseña: 123456</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Screen -->
+        <div id="dashboard-screen" class="screen">
+            <header class="header">
+                <h1>Panel de Tienda</h1>
+                <div class="user-info">
+                    <span id="user-name"></span>
+                    <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+                </div>
+            </header>
+            
+            <div class="dashboard-content">
+                <div class="store-info-card">
+                    <h2 id="store-name">Mi Tienda</h2>
+                    <p id="store-description">Descripción de la tienda</p>
+                    <div class="store-status-container">
+                        <span>Estado: </span>
+                        <span id="store-status" class="status-indicator">Cerrado</span>
+                        <button id="toggle-status-btn" class="btn-primary">Abrir Tienda</button>
+                    </div>
+                </div>
+
+                <div class="actions-grid">
+                    <div class="action-card" onclick="app.showScreen('products-screen')">
+                        <div class="action-icon">🍕</div>
+                        <h3>Gestionar Productos</h3>
+                        <p>Agregar, editar o eliminar productos</p>
+                    </div>
+                    
+                    <div class="action-card" onclick="app.showScreen('orders-screen')">
+                        <div class="action-icon">📋</div>
+                        <h3>Ver Pedidos</h3>
+                        <p>Gestionar pedidos recibidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Screen -->
+        <div id="products-screen" class="screen">
+            <header class="header">
+                <button id="back-to-dashboard" class="btn-back">← Volver</button>
+                <h1>Gestionar Productos</h1>
+                <button id="add-product-btn" class="btn-primary">+ Agregar Producto</button>
+            </header>
+            
+            <div class="products-list" id="products-list">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Add Product Modal -->
+        <div id="add-product-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Agregar Producto</h2>
+                    <button id="close-modal" class="close-btn">&times;</button>
+                </div>
+                <form id="add-product-form">
+                    <div class="form-group">
+                        <label>Nombre del producto</label>
+                        <input type="text" id="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Precio</label>
+                        <input type="number" id="product-price" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea id="product-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>URL de imagen (opcional)</label>
+                        <input type="url" id="product-image">
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" id="cancel-add-product" class="btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn-primary">Agregar Producto</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Orders Screen -->
+        <div id="orders-screen" class="screen">
+            <header class="header">
+                <button id="back-to-dashboard-from-orders" class="btn-back">← Volver</button>
+                <h1>Pedidos Recibidos</h1>
+            </header>
+            
+            <div class="orders-list" id="orders-list">
+                <!-- Orders will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

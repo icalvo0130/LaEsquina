@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1757082759180,
+    "userId": 1,
+    "storeId": 2,
+    "products": [
+      {
+        "id": 3,
+        "name": "Product 3",
+        "price": 10,
+        "quantity": 6
+      }
+    ],
+    "total": 60,
+    "address": "89w8933839",
+    "paymentMethod": "card",
+    "status": "in_progress",
+    "createdAt": "2025-09-05T14:32:39.180Z",
+    "deliveryId": 5
+  },
+  {
+    "id": 1757083104559,
+    "userId": 1,
+    "storeId": 2,
+    "products": [
+      {
+        "id": 4,
+        "name": "Product 4",
+        "price": 10,
+        "quantity": 5
+      }
+    ],
+    "total": 50,
+    "address": "urew8r9eq4ri93q",
+    "paymentMethod": "cash",
+    "status": "in_progress",
+    "createdAt": "2025-09-05T14:38:24.559Z",
+    "deliveryId": 5
+  },
+  {
+    "id": 1757083968396,
+    "userId": 1,
+    "storeId": 1,
+    "products": [
+      {
+        "id": 1,
+        "name": "Pizza Margherita",
+        "price": 12.99,
+        "quantity": 7
+      }
+    ],
+    "total": 90.93,
+    "address": "urew8r9eq4ri93q",
+    "paymentMethod": "cash",
+    "status": "in_progress",
+    "createdAt": "2025-09-05T14:52:48.396Z",
+    "deliveryId": 5
+  },
+  {
+    "id": 1757084706997,
+    "userId": 1,
+    "storeId": 1,
+    "products": [
+      {
+        "id": 1757084447396,
+        "name": "pollo",
+        "price": 0.37,
+        "quantity": 6
+      }
+    ],
+    "total": 2.2199999999999998,
+    "address": "por ahi",
+    "paymentMethod": "card",
+    "status": "in_progress",
+    "createdAt": "2025-09-05T15:05:06.997Z",
+    "deliveryId": 5
+  },
+  {
+    "id": 1757115648723,
+    "userId": 1,
+    "storeId": 1,
+    "products": [
+      {
+        "id": 1757084447396,
+        "name": "pollo",
+        "price": 0.37,
+        "quantity": 5
+      }
+    ],
+    "total": 1.85,
+    "address": "por ahi",
+    "paymentMethod": "card",
+    "status": "in_progress",
+    "createdAt": "2025-09-05T23:40:48.723Z",
+    "deliveryId": 5
+  },
+  {
+    "id": 1757116570905,
+    "userId": 1,
+    "storeId": 1,
+    "products": [
+      {
+        "id": 1,
+        "name": "Pizza Margherita",
+        "price": 12.99,
+        "quantity": 3
+      }
+    ],
+    "total": 38.97,
+    "address": "jclksndlck",
+    "paymentMethod": "cash",
+    "status": "accepted",
+    "createdAt": "2025-09-05T23:56:10.905Z",
+    "deliveryId": null
+  },
+  {
+    "id": 1757116627636,
+    "userId": 3,
+    "storeId": 1,
+    "products": [
+      {
+        "id": 1,
+        "name": "Pizza Margherita",
+        "price": 12.99,
+        "quantity": 3
+      }
+    ],
+    "total": 38.97,
+    "address": "kckqnd",
+    "paymentMethod": "cash",
+    "status": "accepted",
+    "createdAt": "2025-09-05T23:57:07.636Z",
+    "deliveryId": null
+  },
+  {
+    "id": 1757120795444,
+    "userId": 1,
+    "storeId": 1,
+    "products": [
+      {
+        "id": 1757084447396,
+        "name": "pollo",
+        "price": 0.37,
+        "quantity": 8
+      }
+    ],
+    "total": 2.96,
+    "address": "89w8933839",
+    "paymentMethod": "cash",
+    "status": "in_progress",
+    "createdAt": "2025-09-06T01:06:35.444Z",
+    "deliveryId": 5
+  }
+]

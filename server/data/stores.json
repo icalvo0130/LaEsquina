@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Corner",
+    "description": "Las mejores pizzas de la ciudad",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300",
+    "isOpen": true,
+    "rating": 4.5,
+    "deliveryTime": "25-35 min"
+  },
+  {
+    "id": 2,
+    "name": "Burger Palace",
+    "description": "Hamburguesas artesanales",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300",
+    "isOpen": true,
+    "rating": 4.2,
+    "deliveryTime": "20-30 min"
+  },
+  {
+    "id": 3,
+    "name": "Sushi Master",
+    "description": "Sushi fresco y delicioso",
+    "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=300",
+    "isOpen": false,
+    "rating": 4.8,
+    "deliveryTime": "30-40 min"
+  }
+]

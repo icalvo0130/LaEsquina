@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Margherita",
+    "price": 12.99,
+    "description": "Pizza clásica con tomate, mozzarella y albahaca",
+    "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=200",
+    "storeId": 1,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Pepperoni",
+    "price": 14.99,
+    "description": "Pizza con pepperoni y queso mozzarella",
+    "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200",
+    "storeId": 1,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Hamburguesa Clásica",
+    "price": 8.99,
+    "description": "Hamburguesa con carne, lechuga, tomate y cebolla",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200",
+    "storeId": 2,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Hamburguesa BBQ",
+    "price": 10.99,
+    "description": "Hamburguesa con salsa BBQ y bacon",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=200",
+    "storeId": 2,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Roll California",
+    "price": 9.99,
+    "description": "Roll de sushi con cangrejo, aguacate y pepino",
+    "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=200",
+    "storeId": 3,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Sashimi de Salmón",
+    "price": 15.99,
+    "description": "Sashimi fresco de salmón",
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?w=200",
+    "storeId": 3,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": 1757084317652,
+    "name": "Pizza Margherita",
+    "price": 12.99,
+    "description": "Pizza clásica",
+    "image": "https://example.com/pizza.jpg",
+    "storeId": 1,
+    "createdAt": "2025-09-05T14:58:37.652Z"
+  },
+  {
+    "id": 1757084447396,
+    "name": "pollo",
+    "price": 0.37,
+    "description": "saouhfea",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAAAHlBMVEX///+LRCDenXvNfUpaLBDSjmLmvqSsXTHeqoPuyqxhfVmwAAABE0lEQVR4nO3YS3KDQBBEQf1s2fe/sHdTmwoCUBgzVr4lI5pk1SEuF0mSDu66MkBAQEBAwM66j26jj1FOD0YDAgICAp4c+ByFFcyz1E5/kQoICAgIeEpgBrZl1jDhf5Yy5TECBAQEBHxfYK4ts1Jbky9RAQEBAQGnAaaM3s5K7YV3UAEBAQEBTwkMpi2z9iFuOwsQEBAQ8N2AKacN3ZbjMiv3AgICAgL+Z2AGNkJbermW391Lq1mAgICAgBMCG6utteU/Te2OHQsOEBAQEHAa4NdomRX+rdRe7lFazQIEBAQEnAb4PcqYa2k7awcGEBAQEHBCYCsPaYuwYQ5hAQICAgJOA2zr788wgICAgIATAiVJqv0A3hS1QSAqoyUAAAAASUVORK5CYII=",
+    "storeId": 1,
+    "createdAt": "2025-09-05T15:00:47.396Z"
+  },
+  {
+    "id": 1757116665946,
+    "name": "pasta",
+    "price": 1.59,
+    "description": "super rico",
+    "image": "https://via.placeholder.com/300x200?text=Sin+Imagen",
+    "storeId": 1,
+    "createdAt": "2025-09-05T23:57:45.946Z"
+  },
+  {
+    "id": 1757120832499,
+    "name": "dsakdoksadksa",
+    "price": 0.07,
+    "description": "Sin descripción",
+    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABQQGAQMHAgj/xAA+EAABAwIEAwQGBwgCAwAAAAABAAIDBBEFEiExBkFREyJhcTIzUnKBsQcUIzVCQ5E0gqGywcLR4WLxRVOD/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAIDAQQFBv/EACQRAAICAQQDAQADAQAAAAAAAAABAgMRBAUhMRIyQXEUIlET/9oADAMBAAIRAxEAPwDuKEIQEZ1S0yOjvYg21XmWVkYu92qXyTQzzz9lIyTs5Cx+U3yOHI9CvLm3Ou6AmMrInGxuzxPNbZBG5n2mUs6lQIIGvdZz7eA5qa6miLA3LoNrICC4U4l9J+S+pTCERtbeGwB5hRDREO0eMnjupUMDIfQ1PUlAbJJJCw9nlzcrpHWNqe0H1kuceR5KTiGOUdFmYHdrL7DOXmeSVUGNVVdjNOx5DIS532bdj3Tv1QE2nxCogFmuzt6O1UStnqak3meXt9kbD4JnWx0rz3AQ/qzQKO1gZqN+pQEeiqaqmPcf3PYdqE8psVhls2T7N/jt+qgMonT/AIQ0e0VGrMOqogXR2fGPZ0P6ICzg3FxssqoUVbVUrrQu7vNjtv8ASf0mKRTWbL9m89dj8UAwQsAgi4OiygBCEIAWCtVVUw0lO+eqmZDCwXc95sAqtXcb0r2EYRlqOXau9EfDc/wVdlka1mRKMXJ4RwTjbGcRwP6TMdqsKq5KaYVbtWHRw00I2IXbuEMbmxThvDq6vDTPPCHyOYLC/kubc",
+    "storeId": 1,
+    "createdAt": "2025-09-06T01:07:12.499Z"
+  }
+]

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Esquina - Consumidor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen active">
+            <div class="glass-card">
+                <div class="logo">
+                    <h1>La Esquina</h1>
+                    <p>Inicia sesión como consumidor</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                </form>
+                <div class="demo-credentials">
+                    <p>Credenciales de prueba:</p>
+                    <p>Email: juan@consumer.com | Contraseña: 123456</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stores Screen -->
+        <div id="stores-screen" class="screen">
+            <header class="header">
+                <h1>Restaurantes</h1>
+                <div class="user-info">
+                    <span id="user-name"></span>
+                    <button id="view-orders-btn" class="btn-secondary">Mis Pedidos</button>
+                    <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+                </div>
+            </header>
+            <div class="stores-grid" id="stores-grid">
+                <!-- Stores will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Store Detail Screen -->
+        <div id="store-detail-screen" class="screen">
+            <header class="header">
+                <button id="back-to-stores" class="btn-back">← Volver</button>
+                <h1 id="store-name"></h1>
+                <div class="cart-info">
+                    <button id="cart-btn" class="btn-cart">
+                        🛒 <span id="cart-count">0</span>
+                    </button>
+                </div>
+            </header>
+            <div class="store-info" id="store-info">
+                <!-- Store info will be loaded here -->
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Cart Screen -->
+        <div id="cart-screen" class="screen">
+            <header class="header">
+                <button id="back-to-store" class="btn-back">← Volver</button>
+                <h1>Carrito</h1>
+            </header>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-summary">
+                <div class="total">
+                    <span>Total: $<span id="cart-total">0.00</span></span>
+                </div>
+                <button id="checkout-btn" class="btn-primary" disabled>Proceder al Pago</button>
+            </div>
+        </div>
+
+        <!-- Checkout Screen -->
+        <div id="checkout-screen" class="screen">
+            <header class="header">
+                <button id="back-to-cart" class="btn-back">← Volver</button>
+                <h1>Finalizar Pedido</h1>
+            </header>
+            <div class="checkout-form">
+                <div class="form-group">
+                    <label>Dirección de entrega</label>
+                    <input type="text" id="delivery-address" placeholder="Ingresa tu dirección" required>
+                </div>
+                <div class="form-group">
+                    <label>Método de pago</label>
+                    <select id="payment-method" required>
+                        <option value="">Selecciona método de pago</option>
+                        <option value="cash">Efectivo</option>
+                        <option value="card">Tarjeta</option>
+                    </select>
+                </div>
+                <div class="order-summary">
+                    <h3>Resumen del pedido</h3>
+                    <div id="order-items"></div>
+                    <div class="total">
+                        <span>Total: $<span id="order-total">0.00</span></span>
+                    </div>
+                </div>
+                <button id="place-order-btn" class="btn-primary">Confirmar Pedido</button>
+            </div>
+        </div>
+
+        <!-- Orders History Screen -->
+        <div id="orders-screen" class="screen">
+            <header class="header">
+                <button id="back-to-stores-from-orders" class="btn-back">← Volver</button>
+                <h1>Mis Pedidos</h1>
+            </header>
+            <div class="orders-list" id="orders-list">
+                <!-- Orders will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

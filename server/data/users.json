@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Juan Pérez",
+    "email": "juan@consumer.com",
+    "password": "123456",
+    "role": "consumer"
+  },
+  {
+    "id": 2,
+    "name": "María García",
+    "email": "maria@consumer.com",
+    "password": "123456",
+    "role": "consumer"
+  },
+  {
+    "id": 3,
+    "name": "Carlos López",
+    "email": "carlos@store.com",
+    "password": "123456",
+    "role": "store",
+    "storeId": 1
+  },
+  {
+    "id": 4,
+    "name": "Ana Martínez",
+    "email": "ana@store.com",
+    "password": "123456",
+    "role": "store",
+    "storeId": 2
+  },
+  {
+    "id": 5,
+    "name": "Pedro Rodríguez",
+    "email": "pedro@delivery.com",
+    "password": "123456",
+    "role": "delivery"
+  },
+  {
+    "id": 6,
+    "name": "Luis Fernández",
+    "email": "luis@delivery.com",
+    "password": "123456",
+    "role": "delivery"
+  }
+]

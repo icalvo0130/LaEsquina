@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Esquina - Repartidor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen active">
+            <div class="glass-card">
+                <div class="logo">
+                    <h1>La Esquina</h1>
+                    <p>App de Repartidor</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                </form>
+                <div class="demo-credentials">
+                    <p>Credenciales de prueba:</p>
+                    <p>Email: pedro@delivery.com | Contraseña: 123456</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Screen -->
+        <div id="dashboard-screen" class="screen">
+            <header class="header">
+                <h1>Panel de Repartidor</h1>
+                <div class="user-info">
+                    <span id="user-name"></span>
+                    <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+                </div>
+            </header>
+            
+            <div class="dashboard-content">
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-info">
+                            <h3 id="available-orders">0</h3>
+                            <p>Pedidos Disponibles</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">🚚</div>
+                        <div class="stat-info">
+                            <h3 id="my-orders">0</h3>
+                            <p>Mis Pedidos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions-grid">
+                    <div class="action-card" onclick="app.showScreen('available-orders-screen')">
+                        <div class="action-icon">📋</div>
+                        <h3>Ver Pedidos Disponibles</h3>
+                        <p>Buscar nuevos pedidos para entregar</p>
+                    </div>
+                    
+                    <div class="action-card" onclick="app.showScreen('my-orders-screen')">
+                        <div class="action-icon">🚛</div>
+                        <h3>Mis Pedidos</h3>
+                        <p>Gestionar pedidos asignados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Available Orders Screen -->
+        <div id="available-orders-screen" class="screen">
+            <header class="header">
+                <button id="back-to-dashboard" class="btn-back">← Volver</button>
+                <h1>Pedidos Disponibles</h1>
+                <button id="refresh-orders" class="btn-primary">🔄 Actualizar</button>
+            </header>
+            
+            <div class="orders-list" id="available-orders-list">
+                <!-- Available orders will be loaded here -->
+            </div>
+        </div>
+
+        <!-- My Orders Screen -->
+        <div id="my-orders-screen" class="screen">
+            <header class="header">
+                <button id="back-to-dashboard-from-my-orders" class="btn-back">← Volver</button>
+                <h1>Mis Pedidos</h1>
+                <button id="refresh-my-orders" class="btn-primary">🔄 Actualizar</button>
+            </header>
+            
+            <div class="orders-list" id="my-orders-list">
+                <!-- My orders will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Order Detail Screen -->
+        <div id="order-detail-screen" class="screen">
+            <header class="header">
+                <button id="back-to-orders" class="btn-back">← Volver</button>
+                <h1>Detalle del Pedido</h1>
+            </header>
+            
+            <div class="order-detail" id="order-detail-content">
+                <!-- Order detail will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
